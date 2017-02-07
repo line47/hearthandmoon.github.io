@@ -1,3 +1,14 @@
 html {
-  background: #f6f6f6;
+    background: #f6f6f6;
+}
+
+img {
+    max-width: 100%;
+    width: 700px;
+    margin-top: 5rem;
+}
+
+.main-content,
+footer {
+    text-align: center;
 }
