@@ -1,14 +1,19 @@
-html {
-    background: #f6f6f6;
-}
+html { background: #f6f6f6; }
 
-img {
-    max-width: 100%;
-    width: 700px;
-    margin-top: 5rem;
-}
+img { max-width: 100%; width: 700px; margin-top: 5rem; }
 
-.main-content,
-footer {
-    text-align: center;
+.main-content, footer { text-align: center; }
+
+.card-deck {
+    display:flex;
+    flex-flow: row wrap;
+     justify-content: center;
+     margin-top:5rem;
+}
+.card-deck .card {
+
+      width:250px;
+}
+.card-deck .card img {
+    margin:0;
 }
