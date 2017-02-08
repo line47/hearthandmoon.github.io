@@ -1,5 +1,8 @@
+@import url( 'https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans');
+
 html {
     background: #f6f6f6;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .main-content,
@@ -22,7 +25,7 @@ footer {
     margin: 0;
 }
 
-.layout-project .main-content {
+.layout-product .main-content {
     text-align: initial;
     max-width: 1040px;
     margin: 0 auto;
@@ -66,6 +69,7 @@ h3 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    font-family: 'Merriweather', serif;
 }
 
 .item-usage {
@@ -80,4 +84,16 @@ button[disabled] {
     color: #fff;
     margin-bottom: 0.5rem;
     border-radius: 2px;
+}
+
+.item-ingredients li {
+    display: inline-block;
+}
+
+.item-ingredients li:after {
+    content: ',';
+}
+
+.item-ingredients li:last-child:after {
+    content: '';
 }

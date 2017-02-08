@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     {% include head.html %}
-    <body class="layout-project">
+    <body class="layout-product">
         {% include top-nav.html %}
         <div class="page-header">
             <h1 class="page-title">{{ page.category }}s</h1>
@@ -23,7 +23,7 @@
                     {% else %}
                       <button>Buy Now</button>
                     {% endif %}
-                    <p class="item-description">
+                    <p class="description">
                         {{ page.shortDescription }}
                     </p>
                     <h3>Use when</h3>
@@ -38,6 +38,10 @@
                         {% endfor %}
                     </ul>
                 </div>
+            </div>
+            <div class="related-items">
+              Other {{ page.category }}s
+
             </div>
         </div>
 
