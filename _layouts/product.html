@@ -28,7 +28,7 @@
                     <li>{{ item }}</li>
                     {% endfor %}
                 </ul>
-                {% if page.soldOut %}
+                {% if page.soldOut == 'blank'%}
                   <button disabled="disabled">Sold Out</button>
                 {% else %}
                   <button>Buy Now</button>
