@@ -1,19 +1,83 @@
-html { background: #f6f6f6; }
+html {
+    background: #f6f6f6;
+}
 
-img { max-width: 100%; width: 700px; margin-top: 5rem; }
-
-.main-content, footer { text-align: center; }
+.main-content,
+footer {
+    text-align: center;
+}
 
 .card-deck {
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
-     justify-content: center;
-     margin-top:5rem;
+    justify-content: center;
+    margin-top: 5rem;
 }
-.card-deck .card {
 
-      width:250px;
+.card-deck .card {
+    width: 250px;
 }
+
 .card-deck .card img {
-    margin:0;
+    margin: 0;
+}
+
+.layout-project .main-content {
+    text-align: initial;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.item-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.item-price {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.item-photo {
+    width: 50%;
+    margin-top: -3.8rem;
+    float: left;
+}
+
+.item-info {
+    margin-left: 50%;
+    padding-left: 2rem;
+}
+
+.item-description {
+    margin-left: 50%;
+    padding-left: 2rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.item-usage {
+    margin-bottom: 0.5rem;
+}
+
+button[disabled] {
+    background: #ce3c37;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
 }
