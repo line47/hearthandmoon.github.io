@@ -1,44 +1,43 @@
 <!DOCTYPE HTML>
 <html>
     {% include head.html %}
-
     <body class="layout-project">
         {% include top-nav.html %}
         <div class="page-header">
-            <h1 class="page-title">Work</h1>
+            <h1 class="page-title">{{ page.category }}s</h1>
         </div>
-
-        <div class="page-subheader">
-            <h2 class="page-subtitle">{{ page.title }}</h2>
-        </div>
-
         <div class="content-container">
             <div class="main-content">
-                {% if page.largeImage %}
-                <img src="{{ page.largeImage }}" style="max-width:100%; box-shadow:0px 3px 5px 0px rgba(0,0,0, .25); margin-bottom:1rem; border: 1px solid rgba(239, 239, 239, 0.68);"/>
-                {% endif %}
-                {{ content }}
-                <p>
-                    {{ page.shortDescription }}
-                </p>
-                <p>
-                    {{ page.Usage }}
-                </p>
-                <h3>Ingredients</h3>
-                <ul class="list-unstyled list-inline list-responsibilities">
-                    {% assign sorted = (page.ingredients | sort) %} {% for item in sorted %}
-                    <li>{{ item }}</li>
-                    {% endfor %}
-                </ul>
-                {% if page.soldOut %}
-                  <button disabled="disabled">Sold Out</button>
-                {% else %}
-                  <button>Buy Now</button>
-                {% endif %}
-
-            </div>
-            <div class="relative-content">
-
+                <div class="item-info">
+                    <h2 class="item-title">{{ page.title }}</h2>
+                    <span class="item-price">${{ page.price }}</span>
+                </div>
+                <div class="item-photo">
+                    {% if page.largeImage %}
+                      <img src="{{ page.largeImage }}" style="max-width:100%; box-shadow:0px 3px 5px 0px rgba(0,0,0, .25); margin-bottom:1rem;" />
+                    {% endif %}
+                </div>
+                <div class="item-description">
+                    {% if page.soldOut %}
+                      <button disabled="disabled">Sold Out</button>
+                    {% else %}
+                      <button>Buy Now</button>
+                    {% endif %}
+                    <p class="item-description">
+                        {{ page.shortDescription }}
+                    </p>
+                    <h3>Use when</h3>
+                    <p class="item-usage">
+                        {{ page.Usage }}
+                    </p>
+                    <h3>Ingredients</h3>
+                    <ul class="list-unstyled list-inline item-ingredients">
+                        {% assign sorted = (page.ingredients | sort) %}
+                        {% for item in sorted %}
+                          <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
 
