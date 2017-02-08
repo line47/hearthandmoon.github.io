@@ -18,5 +18,5 @@ ingredients:
   - Apple Cider Vinegar
   - Honey
 Usage: use this when you start to feel a tickle in your throat.
-soldOut: true
+
 ---  
