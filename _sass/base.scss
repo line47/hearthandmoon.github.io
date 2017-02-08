@@ -11,19 +11,20 @@ footer {
 }
 
 .card-deck {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 5rem;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 5rem;
 
-.card-deck .card {
+  .card {
     width: 250px;
+
+    img {
+      margin: 0;
+    }
+  }
 }
 
-.card-deck .card img {
-    margin: 0;
-}
 
 .layout-product .main-content {
     text-align: initial;
@@ -96,4 +97,8 @@ button[disabled] {
 
 .item-ingredients li:last-child:after {
     content: '';
+}
+
+.related-items {
+  clear: both;
 }
