@@ -77,15 +77,8 @@ h3,h4 {
     margin-bottom: 0.5rem;
 }
 
-button[disabled] {
-    background: #ce3c37;
-    border: none;
-    padding: 0.25rem 0.5rem;
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 0.5rem;
-    border-radius: 2px;
-}
+button { background: #368138; border: none; padding: 0.25rem 0.5rem; font-size: 1rem; color: #fff; margin-bottom: 0.5rem; border-radius: 2px; }
+button[disabled] { background: #ce3c37; color: #fff; }
 
 .item-ingredients li {
     display: inline-block;
