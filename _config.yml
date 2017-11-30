@@ -1,6 +1,10 @@
 
 Timezone: America/Kentucky/Louisville
 Permalink: pretty
+
 collections:
   elixrs:
     output: true
+
+sass:
+  style: compressed
