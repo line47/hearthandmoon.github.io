@@ -1,5 +1,5 @@
 
-@import url( 'https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans');
+@import url( 'https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans');
 
 html {
   background: #fff;
@@ -10,6 +10,12 @@ body {
   line-height: inherit;
 }
 
+.landing-logo {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
 .main-content,
 footer {
   text-align: center;
@@ -41,7 +47,7 @@ footer {
   font-size: 2rem;
   margin-bottom: .5rem;
   font-weight: 700;
-  font-family: 'Merriweather', serif;
+  font-family: 'Amatic SC', cursive, serif;
 }
 
 .item-price {
@@ -77,7 +83,7 @@ h4 {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: .5rem;
-  font-family: 'Merriweather', serif;
+  font-family: 'Amatic SC', cursive, serif;
 }
 
 .item-usage {
@@ -124,4 +130,17 @@ footer {
 
 .related-items .project-item img {
   max-width: 100%;
+}
+
+footer {
+  padding: 5rem 0 2.5rem;
+
+  .copyright {
+    font-size: .8rem;
+  }
+  .tagline {
+    font-family: 'Amatic SC', cursive, serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
 }
