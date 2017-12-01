@@ -137,10 +137,19 @@ footer {
   font-family: 'Amatic SC', cursive, serif;
   text-transform: uppercase;
   font-size: 4rem;
+  span {
+    display:inline-block;
+  }
+
+@media only screen and (max-width: 500px) {
+    .dot {
+      display:none;
+    }
+  }
 }
 
 footer {
-  padding: 5rem 0 2.5rem;
+  padding: 15rem 0 2.5rem;
 
   .copyright {
     font-size: .8rem;
