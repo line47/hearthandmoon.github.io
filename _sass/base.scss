@@ -1,5 +1,4 @@
-
-@import url( 'https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans');
 
 html {
   background: #fff;
@@ -13,9 +12,11 @@ body {
 .landing-logo {
   max-width: 100%;
 }
+
 .text-center {
   text-align: center;
 }
+
 .main-content,
 footer {
   text-align: center;
@@ -132,15 +133,20 @@ footer {
   max-width: 100%;
 }
 
+.tagline {
+  font-family: 'Amatic SC', cursive, serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
 footer {
   padding: 5rem 0 2.5rem;
 
   .copyright {
     font-size: .8rem;
   }
+
   .tagline {
-    font-family: 'Amatic SC', cursive, serif;
-    text-transform: uppercase;
     font-size: 2rem;
   }
 }
