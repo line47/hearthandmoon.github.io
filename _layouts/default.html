@@ -3,12 +3,22 @@
     {% include head.html %}
 
     <body class="layout-default">
-        {% include top-nav.html %}
-        <div class="page-header">
-            <h1 class="page-title">{{ page.title }}</h1>
+      {% include top-nav.html %}
+        <div class="site-header">
+          <a href="/"><img src="/assets/images/hearthandmoon-logo.png" class="landing-logo" alt="Hearth and Moon logo"></a>
+          <p class="tagline">
+            <span>Folk wellness</span>
+            <span class="dot">•</span>
+            <span>Earth medicine</span>
+            <span class="dot">•</span>
+            <span>Plant magic</span> 
+          </p>
         </div>
         <div class="content-container">
             <div class="main-content">
+                {% if page.permalink != '/' %}
+                <h1 class="page-title">{{ page.title }}</h1>
+                {% endif %}
                 {{ content }}
             </div>
         </div>

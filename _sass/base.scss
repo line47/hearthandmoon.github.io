@@ -9,6 +9,22 @@ body {
   line-height: inherit;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Amatic SC', cursive, serif;
+  margin-bottom: 1rem;
+}
+
+em {
+font-style: italic;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
 .landing-logo {
   max-width: 100%;
 }
@@ -17,7 +33,14 @@ body {
   text-align: center;
 }
 
-.main-content,
+.content-container {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0 1rem;
+  img {
+    max-width: 100%;
+  }
+}
 footer {
   text-align: center;
 }
@@ -136,17 +159,22 @@ footer {
 .tagline {
   font-family: 'Amatic SC', cursive, serif;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 3rem;
+
   span {
     display:inline-block;
   }
+}
 
 @media only screen and (max-width: 500px) {
-    .dot {
-      display:none;
+    .site-header {
+      .tagline {
+        display:none;
+    }
     }
   }
-}
 
 footer {
   padding: 15rem 0 2.5rem;
@@ -157,5 +185,6 @@ footer {
 
   .tagline {
     font-size: 2rem;
+    color: inherit;
   }
 }
