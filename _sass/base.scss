@@ -188,3 +188,24 @@ footer {
     color: inherit;
   }
 }
+
+#instafeed {
+  text-align: center;
+}
+
+#instafeed a {
+  width: 100%;
+  margin: 10px;
+  height: 178px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+#instafeed a {
+  width: 178px;
+
+  margin: 10px;
+  height: 178px;
+  overflow: hidden;
+}
+}
